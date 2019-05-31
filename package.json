@@ -1,0 +1,12 @@
+{
+  "name": "agile_bi_forge_project_interview_quiz",
+  "version": "1.0.0",
+  "description": "Make a small rest api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Lakshmi Strom",
+  "license": "ISC"
+}
