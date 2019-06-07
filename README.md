@@ -7,7 +7,7 @@ I was able to decode each string.
 
 1st string translated to using the decimal decoder:
 Voiceless it cries, Wingless flutters, Toothless bites, Mouthless mutters
--The answer to the riddle above is The Wind. According to the internet.
+-The answer to the riddle above is (The Wind. = 84 + 104 + 101+ 32 + 87 + 105 + 110 + 100 + 46 = 769).
 
 2nd string translated to hexadecimal decoder: 
 The sum the total of the ascii values from each letter in the answer to the riddle
