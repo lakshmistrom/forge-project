@@ -4,7 +4,7 @@ let secondStr = "5468652073756d2074686520746f74616c206f6620746865206173636969207
 
 let thirdStr = "507473543466548535531534555466536545548466531466546538545544535466549533548535535544467";
 
-function decodeString(str){
+function decodeStringHexadecimal(str){
     let chrArr = [];
     let len = str.length - 2;
     for(let i = 0; i < len; i+=2){
@@ -17,6 +17,40 @@ function decodeString(str){
     let convertedStr = convertedArr.join('');
     console.log(convertedStr);
 }
-decodeString(firstStr);
-decodeString(secondStr);
-decodeString(thirdStr);
+function decodeStringDecimal(str){
+    let chrArr = [];
+    let len = str.length - 2;
+    for(let i = 0; i < len; i+=2){
+        let ascii = parseInt(str[i] + str[i + 1]);
+        if(ascii < 32){
+            ascii = parseInt(str[i] + str[i + 1] + str[i + 2]);
+            i++;
+        }
+        chrArr.push(ascii);
+    }
+    let convertedArr = chrArr.map(element => {
+        return String.fromCharCode(element);
+    });
+    let convertedStr = convertedArr.join('');
+    console.log(convertedStr);
+}
+function decodeStringDecimal(str){
+    let chrArr = [];
+    let len = str.length - 2;
+    for(let i = 0; i < len; i+=2){
+        let ascii = parseInt(str[i] + str[i + 1]);
+        if(ascii < 32){
+            ascii = parseInt(str[i] + str[i + 1] + str[i + 2]);
+            i++;
+        }
+        chrArr.push(ascii);
+    }
+    let convertedArr = chrArr.map(element => {
+        return String.fromCharCode(element);
+    });
+    let convertedStr = convertedArr.join('');
+    console.log(convertedStr);
+}
+decodeStringDecimal(firstStr);
+decodeStringHexadecimal(secondStr);
+decodeStringDecimal(thirdStr);

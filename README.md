@@ -5,18 +5,17 @@ The decodeRiddle folder contains the riddle question.
 
 I was able to decode each string.
 
-1st string translated to:
-S!c)QTC(qQ2qaAD2
-                aQ2Q2aT
+1st string translated to using the decimal decoder:
+Voiceless it cries, Wingless flutters, Toothless bites, Mouthless mutters
+-The answer to the riddle above is The Wind. According to the internet.
 
-2nd string translated to: 
+2nd string translated to hexadecimal decoder: 
 The sum the total of the ascii values from each letter in the answer to the riddle
 
-3rd string translated to: 
-PtsT4fT
-5S4UTfSeET
-          fSfTe8TUDSTfT3T
-5SUDF
+3rd string translated to using the decimal decoder: 
+2JI6"B6U#5-7.A$670.AĺB6A&67,56B6_!6U#57,.
+
+-Couldn't find the key to decript the last string.
 
 The restfulAPIProblem contains the restful api problem.
     -After cloning the repo run npm install
